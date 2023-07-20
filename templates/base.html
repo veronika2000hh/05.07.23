@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой сайт</title>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <nav>
+        <a href="{% url 'index' %}">Главная</a>
+        <a href="{% url 'top_sellers' %}">Топ продаж</a>
+    </nav>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>Мой сайт</footer>
+</body>
+</html>
